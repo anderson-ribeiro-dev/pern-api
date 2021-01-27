@@ -1,11 +1,11 @@
 module.exports = {
   client: "pg",
   connection: {
-    host: process.env.HOST,
-    port: process.env.PORT,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
+    host: process.env.DBHOST,
+    port: process.env.PORTDB,
+    user: process.env.DBUSER,
+    password: process.env.DBPASSWORD,
+    database: process.env.DBDATABASE,
   },
   // connection: {
   //   host : 'localhost',
