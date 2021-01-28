@@ -1,11 +1,13 @@
+require("dotenv").config();
+
 module.exports = {
   client: "pg",
   connection: {
-    host: process.env.DBHOST,
-    port: process.env.PORTDB,
-    user: process.env.DBUSER,
-    password: process.env.DBPASSWORD,
-    database: process.env.DBDATABASE,
+    host: "produtos.cd33u3w7gwiu.us-east-1.rds.amazonaws.com",
+    port: "5432",
+    user: "postgres",
+    password: "derso_1804****",
+    database: "postgres",
   },
   // connection: {
   //   host : 'localhost',
