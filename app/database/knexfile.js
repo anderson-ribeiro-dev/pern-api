@@ -2,12 +2,13 @@ module.exports = {
   development: {
     client: "pg",
     connection: {
-      host: process.env.DB_HOST,
-      port: process.env.DB_PORT,
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_DATABASE,
+      host: 'produtos.cd33u3w7gwiu.us-east-1.rds.amazonaws.co'm,
+      port: '5432',
+      user: 'postgres',
+      password: 'derso_1804****',
+      database: 'postgres',
       connectTimeout: 90000,
+
     },
     // connection: {
     //   host: "localhost",
