@@ -19,7 +19,7 @@ module.exports = {
     debub: true,
     pool: {
       min: 1,
-      max: 20,
+      max: 50,
     },
     migrations: {
       directory: "migrations",
