@@ -14,6 +14,7 @@ module.exports = {
   //   password: "123456",
   //   database: "autenticacao",
   // },
+  debub: true,
   pool: {
     min: 0,
     max: 15,
