@@ -6,9 +6,8 @@ const secretKey = process.env.APP_SECRET;
 class AuthController {
   async authentication(req, res) {
     const { email, password } = req.body;
-    if (email !== undefined) {
+    if (email) {
       const usuario = await usuarioModel.usuario(email);
-      console.log("usuario", usuario);
       if (usuario.length > 0) {
         //verifica se as senhas são iguais, retorna true ou false
         const checkPassword = bcrypt.compare(password, usuario[0].password);
